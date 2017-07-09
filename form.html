@@ -33,25 +33,47 @@
   </p>
 
   <!-- This is Nationality List -->
-  <p>Nationality:<br />
-    <select name="nationality">
-    <option value="indonesian">Indonesian</option>
-    <option value="bruneian">Bruneian</option>
-    <option value="burmese">Burmese</option>
-    <option value="cambodian">Cambodian</option>
-    <option value="laotian">Laotian</option>
-    <option value="malaysian">Malaysian</option>
-    <option value="papua new guinean">Philippine</option>
-    <option value="singaporean">Singaporean</option>
-    <option value="thai">Thai</option>
-    <option value="vietnamese">Vietnamese</option>
+  <p>
+  <label for="nationality">Nationality:</label><br />
+    <input type="text" name="nationality"
+    list=nationalitySea />
+    <datalist id="nationalitySea">
+      <option value="indonesian">Indonesian</option>
+      <option value="bruneian">Bruneian</option>
+      <option value="burmese">Burmese</option>
+      <option value="cambodian">Cambodian</option>
+      <option value="laotian">Laotian</option>
+      <option value="malaysian">Malaysian</option>
+      <option value="papua new guinean">Philippine</option>
+      <option value="singaporean">Singaporean</option>
+      <option value="thai">Thai</option>
+      <option value="vietnamese">Vietnamese</option>
+    </datalist>
   </p>
-  
+    
+  <!-- This is Language Spoken Radio Button -->
+  <p>
+  <label for="language">Language Spoken:</label><br />
+    <!-- This is Bahasa Indonesia checkbox -->
+    <input id="indonesia-checkbox" type="checkbox" name="language" value="indonesia">
+    <label for="indonesia-checkbox">Bahasa Indonesia</label><br />
+    <!-- This is English checkbox -->
+    <input id="english-checkbox" type="checkbox" name="language" value="english">
+    <label for="english-checkbox">English</label><br />
+    <!-- This is Other checkbox -->
+    <input id="other-checkbox" type="checkbox" name="language" value="other">
+    <label for="other-checkbox">Other</label>
+  </p>
+
   <!-- This is Bio Comment Box -->
-  <p>Bio:<br />
-  
-
-
+  <p>
+    <label for="biography">Bio:</label><br />
+    <iframe src="https://google.com" height="100" width="200"></iframe><br />
+    <button type="submit" class="signupbtn"><a href="file:///C:/Users/Yosua%20Surojo/Desktop/firstpage/index.html" target="_blank">Sign Up</a></button>
   </p>
+
+
+
+  
 </body> 
 </html>
